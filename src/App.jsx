@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
-// import PrintPDFF from "./Printer";
+import Print from "./Printer";
 import PrintButton from "./Print";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SvgEditer from "./SvgEditer";
+import MainPage from "./MainPage";
 
 function App() {
   const [svgCode, setSvgCode] = useState(
@@ -24,8 +25,10 @@ function App() {
   return(
     <BrowserRouter>
       <Routes>
-        <Route element={<SvgEditer svgCode={svgCode} setSvgCode={setSvgCode} textValues={textValues} setTextValues={setTextValues} />} path="/" />
+        <Route element={<MainPage svgCode={svgCode} setSvgCode={setSvgCode} textValues={textValues} setTextValues={setTextValues} />} path="/" />
+        <Route element={<SvgEditer svgCode={svgCode} setSvgCode={setSvgCode} textValues={textValues} setTextValues={setTextValues} />} path="/edit" />
         <Route element={<PrintButton svgCode={svgCode} />} path="/print" />
+        {/* <Route element={<Print svgCode={svgCode} />} path="/mobileprint" /> */}
       </Routes>
     </BrowserRouter>
   )
