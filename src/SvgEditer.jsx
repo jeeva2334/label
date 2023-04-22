@@ -123,7 +123,7 @@ function SvgEditer({svgCode,setSvgCode,textValues,setTextValues}) {
       
   const svgRef = useRef(null);
   return (
-    <div className="h-[190vh] md:h-[100vh]">
+    <div className="h-[190vh] md:h-[120vh]">
       <div className='h-20 bg-black'>
         <h1 className='flex justify-start items-center p-5 text-white font-bold text-2xl'>Label Printer</h1>
       </div>
