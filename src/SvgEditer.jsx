@@ -154,20 +154,22 @@ function SvgEditer({svgCode,setSvgCode,textValues,setTextValues}) {
               />
             </div>
           ))}
-          <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn m-1">Options</label>
-            <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-              <li><button onClick={handleSave} to='/print'>Save as svg</button></li>
-              <li><button onClick={handleSavePng}>save as PNG</button></li>
-              <li><button onClick={handlePrint}>Print label</button></li>
-              <li>
-                <label class="">
-                  <span class="">Select a file &nbsp; &nbsp; &nbsp;</span>
-                  <input type="file" class="hidden" onChange={handleFileChange} />
-                </label>
-              </li>
-              <li><Link to='/'>Go Home</Link></li>
-            </ul>
+          <div className="flex justify-end w-full items-center md:justify-start">
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn m-1">Options</label>
+              <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><button onClick={handleSave} to='/print'>Save as svg</button></li>
+                <li><button onClick={handleSavePng}>save as PNG</button></li>
+                <li><button onClick={handlePrint}>Print label</button></li>
+                <li>
+                  <label class="">
+                    <span class="">Select a file &nbsp; &nbsp; &nbsp;</span>
+                    <input type="file" class="hidden" onChange={handleFileChange} />
+                  </label>
+                </li>
+                <li><Link to='/'>Go Home</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
