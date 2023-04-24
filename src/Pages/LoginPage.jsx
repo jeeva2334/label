@@ -15,7 +15,7 @@ function LoginPage() {
     login(email,password,setType,setMessage,setAlert,navigate);
   };
   return (
-    <div className='h-screen'>
+    <div className='h-screen bg-white'>
       <NavBar />
       <div className="container min-h-[80vh] flex flex-col justify-center items-center p-4 md:p-0">
         <h1 className='font-[900] mb-9 md:text-5xl text-4xl text-center'>Good to see you Back!</h1>

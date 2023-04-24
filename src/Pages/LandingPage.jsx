@@ -11,7 +11,7 @@ function LandingPage() {
     check();
   },[])
   return (
-    <div className='h-screen'>
+    <div className='h-screen bg-white'>
       <NavBar />
       <div className='flex md:justify-around justify-start items-center h-[80vh] p-5 md:p-20'>
         <div className='flex flex-col justify-start items-start'>

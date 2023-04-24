@@ -10,7 +10,7 @@ function NavBar(){
     console.log(isLogged)
   },[])
   return(
-    <div className="navbar bg-base-100 border-b">
+    <div className="navbar border-b bg-white">
       <div className="navbar-start">
         <div className="dropdown md:hidden">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -22,10 +22,10 @@ function NavBar(){
             <li>{isLogged ? <Link to="/main" className="hover:bg-gray-50 hover:text-green-800 font-semibold">Design and print</Link>:<Link to="/login" className=" hover:bg-gray-50 hover:text-green-800 font-semibold">Login</Link>}</li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl hidden md:flex">Label Printer</a>
+        <a className="btn btn-ghost normal-case text-3xl hidden md:flex text-green-600 font-bold font-[Mirza]">Label Printer</a>
       </div>
       <div className="navbar-center">
-        <Link to="/" className="btn btn-ghost normal-case text-xl md:hidden">Label Printer</Link>
+        <Link to="/" className="btn btn-ghost normal-case text-xl md:hidden text-green-600 font-bold font-[Mirza]">Label Printer</Link>
         <Link to="/" className="btn btn-ghost hover:bg-gray-50 hover:text-blue-800 normal-case text-xl hidden md:flex">Home</Link>
         <Link to="/" className="btn btn-ghost hover:bg-gray-50 hover:text-blue-800 normal-case text-xl hidden md:flex">Products</Link>
         {isLogged ? <Link to="/main" className="btn btn-ghost hover:bg-gray-50 hover:text-green-800 normal-case text-xl hidden md:flex">Design and print</Link>:<Link to="/login" className="btn btn-ghost hover:bg-gray-50 hover:text-green-500 normal-case text-xl hidden md:flex">Login</Link>}
