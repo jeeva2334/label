@@ -147,7 +147,7 @@ function SvgEditerr({ svgCode, setSvgCode, textValues, setTextValues, handleAddT
               <div className="flex justify-end w-full items-center md:justify-start">
                 <div className="dropdown dropdown-end">
                   <label tabIndex={0} className="btn m-1 text-white">Edit</label>
-                  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 text-black">
+                  <ul tabIndex={0} className="dropdown-content menu p-2 shadow rounded-box w-52 text-black bg-white">
                       <li><button onClick={()=>createNew()}>Create New File</button></li>
                       <li><button onClick={handleAddTitleText} to='/print'>Add Title Text</button></li>
                       <li><button onClick={handleAddText}>Add Normal Text</button></li>
@@ -157,7 +157,7 @@ function SvgEditerr({ svgCode, setSvgCode, textValues, setTextValues, handleAddT
                   <div className="flex justify-end w-full items-center md:justify-start">
                       <div className="dropdown dropdown-end">
                       <label tabIndex={0} className="btn m-1 text-white">Options</label>
-                      <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 text-black">
+                      <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-white rounded-box w-52 text-black">
                           <li><button onClick={handleSave} to='/print'>Save as svg</button></li>
                           <li><button onClick={handleSavePng}>save as PNG</button></li>
                           <li><button onClick={handlePrint}>Print label</button></li>
