@@ -142,12 +142,12 @@ function SvgEditerr({ svgCode, setSvgCode, textValues, setTextValues, handleAddT
       <NavBar />
       <div className="h-[190vh] md:h-[94vh] md:p-5 p-2 bg">
         <div className="flex justify-between items-center p-5">
-          <h1 className="text-3xl font-bold">Edit Label</h1>
+          <h1 className="text-3xl text-white font-bold">Edit Label</h1>
             <div className="flex items-center">
               <div className="flex justify-end w-full items-center md:justify-start">
                 <div className="dropdown dropdown-end">
-                  <label tabIndex={0} className="btn m-1">Edit</label>
-                  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <label tabIndex={0} className="btn m-1 text-white">Edit</label>
+                  <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 text-black">
                       <li><button onClick={()=>createNew()}>Create New File</button></li>
                       <li><button onClick={handleAddTitleText} to='/print'>Add Title Text</button></li>
                       <li><button onClick={handleAddText}>Add Normal Text</button></li>
@@ -156,8 +156,8 @@ function SvgEditerr({ svgCode, setSvgCode, textValues, setTextValues, handleAddT
                   </div>
                   <div className="flex justify-end w-full items-center md:justify-start">
                       <div className="dropdown dropdown-end">
-                      <label tabIndex={0} className="btn m-1">Options</label>
-                      <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <label tabIndex={0} className="btn m-1 text-white">Options</label>
+                      <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 text-black">
                           <li><button onClick={handleSave} to='/print'>Save as svg</button></li>
                           <li><button onClick={handleSavePng}>save as PNG</button></li>
                           <li><button onClick={handlePrint}>Print label</button></li>
@@ -191,7 +191,7 @@ function SvgEditerr({ svgCode, setSvgCode, textValues, setTextValues, handleAddT
                       <div className="flex flex-col">
                           <input
                           type="text"
-                          className="input input-sm w-full max-w-xs"
+                          className="input input-sm w-full bg-white text-black max-w-xs"
                           name={id}
                           value={textValues[id]}
                           onChange={handleTextChange}

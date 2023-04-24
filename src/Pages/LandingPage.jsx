@@ -16,7 +16,7 @@ function LandingPage() {
       <div className='flex md:justify-around justify-start items-center h-[80vh] p-5 md:p-20'>
         <div className='flex flex-col justify-start items-start'>
           <h1 className='md:text-[120px] text-5xl text-green-600 font-bold font-[Mirza]'>LabelPrinter</h1>
-          <p className='md:text-2xl text-lg font-semibold md:font-bold mb-3'>Labels your choice. Create and Print<br />get Creative </p>
+          <p className='md:text-2xl text-lg font-semibold md:font-bold mb-3 text-black'>Labels your choice. Create and Print<br />get Creative </p>
           {isLogged ?<button className="btn hover:bg-orange-500 border-none text-white md:mr-20 rounded-l-full rounded-r-full bg-orange-600" onClick={()=>navigate("/main")}>
               Design
             </button>:<button className="btn hover:bg-orange-500 border-none text-white md:mr-20 rounded-l-full rounded-r-full bg-orange-600">

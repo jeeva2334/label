@@ -29,7 +29,7 @@ function MainPage({svgCode, setSvgCode, textValues, setTextValues}) {
         navigate('/edit');
     };
     return (
-        <div className='h-[100vh] bg'>
+        <div className='h-[100vh] bg text-white'>
             <NavBar />
             <div className='h-[80vh] flex flex-col justify-center items-center'>
                 <Link className='btn bg-black px-20 py-4' to='/edit'>Create New File</Link>

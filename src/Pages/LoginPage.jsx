@@ -18,7 +18,7 @@ function LoginPage() {
     <div className='h-screen bg-white'>
       <NavBar />
       <div className="container min-h-[80vh] flex flex-col justify-center items-center p-4 md:p-0">
-        <h1 className='font-[900] mb-9 md:text-5xl text-4xl text-center'>Good to see you Back!</h1>
+        <h1 className='font-[900] mb-9 md:text-5xl text-4xl text-center text-[#CBCBCB]'>Good to see you Back!</h1>
         <div className="p-4 bg-white rounded-xl drop-shadow-lg">
           <div className="flex flex-col items-center">
             <h1 className="font-bold text-3xl md:text-5xl text-gray-900">Login</h1>
@@ -34,7 +34,7 @@ function LoginPage() {
               id="email"
               placeholder="Email"
               required
-              className="input input-bordered w-full border-2 border-gray-200 "
+              className="input input-bordered w-full border-2 border-gray-200 bg-white text-black "
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -47,13 +47,13 @@ function LoginPage() {
               id="password"
               placeholder="Password"
               required
-              className="input input-bordered w-full border-2 border-gray-200 "
+              className="input input-bordered w-full border-2 border-gray-200 bg-white text-black"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             <button
               type="submit"
-              className="btn rounded-xl"
+              className="btn rounded-xl text-white"
               onClick={handleSubmit}
             >
               Login
